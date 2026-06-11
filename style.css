@@ -4,6 +4,7 @@
 
 body{
     margin:1;
+    /* background-color:rgba(247, 220, 255, 0.651); */
     
 }
 
@@ -18,29 +19,9 @@ nav{
 }
 
  .links{
-    display:flex;
-     gap:40px;     
+    display:none;
+    /* gap:40px;  */
 }
-.link{
-   border: 1px solid rgb(9, 46, 88);   
-   background-color: rgba(175, 182, 203, 0.434);
-  /* border-radius: 10px 20px 30px 40px; */
-    border-radius: 8px;
-
-   text-align: center;
-   width: 80px;
-  }
-.link:hover{
-  background-color: rgba(85, 9, 112, 0.685);
-  transform: scale(1.1);
-}
-a{
- text-decoration: none;
- color: rgb(52, 13, 67);
-}
-
-#burger{
-  display: none;}
 
 main{
   display: flex;
@@ -157,18 +138,4 @@ main{
      width: 100%;
   } 
   
-   @media screen and (max-width: 768px) {
-
-   .links {
-      display: none;
-   }
-
-   #burger {
-      display: block;
-   }
-
-   nav {
-      justify-content: space-between;
-      align-items: center;
-   }
-}
+   
