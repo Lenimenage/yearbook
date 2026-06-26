@@ -1,53 +1,76 @@
 *:not(dialog) {
   margin: 0;
 }
-
+ 
 body{
     margin:1;
-    /* background-color:rgba(247, 220, 255, 0.651); */
-    
+   
 }
-
+ 
 nav{
     display:flex;
     justify-content:space-evenly;
     gap:50px;
-    
+   
     background-color: rgba(246, 240, 255, 0.856);
     padding:20px;
     margin-bottom: 30px;
 }
-
+ 
  .links{
-    display:none;
-    /* gap:40px;  */
+    display:flex;
+     gap:40px;    
 }
-
+.link{
+   border: 1px solid rgb(9, 46, 88);  
+   background-color: rgba(175, 182, 203, 0.434);
+  /* border-radius: 10px 20px 30px 40px; */
+    border-radius: 8px;
+ 
+   text-align: center;
+   width: 80px;
+  }
+.link:hover{
+  background-color: rgba(85, 9, 112, 0.685);
+  transform: scale(1.1);
+}
+a{
+ text-decoration: none;
+ color: rgb(52, 13, 67);
+}
+ 
+#burger{
+  display: none;}
+ 
 main{
   display: flex;
   flex-direction: column;
 }
-
+ 
 .presentation{
     margin:auto;
 }
 .Promotion{
     margin-top: 30px;
 }
-
+ 
 .sio{
     display:flex;
     flex-direction: column;
     margin-left: 30px;
+    margin-right: 30px;
     padding: 20px;
-    
+    background-color: rgba(127, 187, 255, 0.667);
+    border-radius: 20px 20px 20px;
+    border: 2px solid rgba(67, 39, 83, 0.703) ;
+   
 }
 #cards{
-    
+   
     margin:auto;
     gap:50px;
-} 
-
+}
+ 
 .container-cartes {
   display: flex;
   justify-content: center;
@@ -69,30 +92,30 @@ main{
   border-top-right-radius: 10px;
   border: 1px solid white;
 }
-
+ 
 .carte-image {
   flex: 1;
-
+ 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
+ 
 .text {
   display: flex;
   flex-direction: column;
   flex: 1;
   background-color: rgba(240, 255, 255, 0.45);
 }
-
+ 
  .structure{
     display:flex;
     justify-content: center;
-     background-color: rgba(232, 234, 235, 0.457); 
+     background-color: rgba(232, 234, 235, 0.457);
 }  
-
+ 
 #form-connexion {
-    display: flex; 
-     justify-content: center; 
+    display: flex;
+     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -103,22 +126,49 @@ main{
     border: 2px solid black;
     border-radius: 30px;
     padding: 10px;
-    
-    
-  } 
-.register2container {
-  display: flex;
-  background-attachment: fixed;
-  background-color: rgba(232, 234, 235, 0.457);
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-.mb-3 {
+   
+   
+  }
+/* //////////////////////////////////////////// */
+.form-inscription{
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    width: 90%;
+    max-width: 380px;
+    height: 100%;
+    background-color:rgba(62, 29, 112, 0.475);
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+  }
+   .structure-inscription{
+     display:flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(99, 113, 121, 0.436);
+     width: 100%;
+  }
+ 
+   @media screen and (max-width: 768px) {
+ 
+   .links {
+      display: none;
+   }
+ 
+   #burger {
+      display: block;
+   }
+ 
+   nav {
+      justify-content: space-between;
+      align-items: center;
+   }
 }
