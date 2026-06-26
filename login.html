@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
  
     <title>connexion</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
   <nav>
     <div class="logo">
@@ -33,22 +33,33 @@
    </header>
  
     <section>
-       <div class="structure">
- <form id="form-connexion" method="POST" action="connexion.php">
-    <div class="mb-3" id="email">
-    <label for="Email1" class="form-label" id="email">Email address</label>
-    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3" id="password">
-    <label for="Password1" class="form-label">Password</label>
-    <input type="password" class="form-control" name="mot_passe">
-    </div>
-    <div id="emailHelp" class="form-text"><a href="/php/inscription.php">creer un compte</a></div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </div>
+      <div class="structure">
+        <form id="form-connexion" method="POST" action="connexion.php">
+          <div class="mb-3" id="email">
+            <label for="Email1" class="form-label" id="email"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              name="Email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3" id="password">
+            <label for="Password1" class="form-label">Password</label>
+            <input type="password" class="form-control" name="mot_passe" />
+          </div>
+          <div id="emailHelp" class="form-text">
+            <a href="/php/inscription.php">creer un compte</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </section>
-</body>
+  </body>
 </html>
  
