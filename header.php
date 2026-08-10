@@ -5,27 +5,36 @@ if (session_status() === PHP_SESSION_NONE) {
 ?>
 
 <header>
-  <nav>
-    <div>
-       <a href="index.php"><h1>MDS</h1></a>
-       <span>✦ Yearbook</span>
-    </div>
+    <nav>
 
-    <div class="links">
+        <div>
+            <a href="index.php">
+                <h1>MDS</h1>
+            </a>
 
+            <span>✦ Yearbook</span>
+        </div>
 
-        <?php if (!isset($_SESSION["user"])): ?>
-          <div class="link">
-            <a href="register.php">Inscription</a>
-          </div>
-          <div class="link">
-            <a href="login.php">Connexion</a>
-          </div>
-        <?php else: ?>
-            <a href="logout.php">Déconnexion</a>
+        <div class="links">
 
-        <?php endif; ?>
+            <?php if (!isset($_SESSION["user"])): ?>
 
-    </div>
-  </nav>
+                <div class="link">
+                    <a href="register.php">Inscription</a>
+                </div>
+
+                <div class="link">
+                    <a href="login.php">Connexion</a>
+                </div>
+
+            <?php else: ?>
+
+                <div class="link">
+                  <a href="logout.php">Déconnexion</a>
+                 </div>
+            <?php endif; ?>
+
+        </div>
+
+    </nav>
 </header>
